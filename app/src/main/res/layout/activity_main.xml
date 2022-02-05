@@ -23,7 +23,9 @@ tools:context=".MainActivity">
         app:sliderIndicatorSelectedColor="#5A5A5A"
         app:sliderIndicatorUnselectedColor="#FFF"
         app:sliderScrollTimeInSec="2"
-        app:sliderStartAutoCycle="true" />
+        app:sliderStartAutoCycle="true" >
+
+    </com.smarteist.autoimageslider.SliderView>
 
 
     <TextView
@@ -134,5 +136,22 @@ Chris Hemsworth
         android:textColor="#003048"
         android:textSize="20dp"
         tools:ignore="HardcodedText,SpUsage" />
+
+    <Button
+        android:layout_width="200dp"
+        android:id="@+id/button1"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:layout_marginBottom="81dp"
+        android:background="#003048"
+        android:text="Ver Pelicula" />
 
 </RelativeLayout>
