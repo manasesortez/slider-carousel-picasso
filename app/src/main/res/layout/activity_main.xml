@@ -1,18 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#fff"
+tools:context=".MainActivity">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginBottom="350dp"
+        android:text="Nombre De la Pelicula"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginBottom="317dp"
+        android:text="Avengers Endgame"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="405dp"
+        android:layout_marginBottom="276dp"
+        android:text="Año de Lanzamiento"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginBottom="243dp"
+        android:text="2019"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginBottom="266dp"
+        android:text="Autores Principales"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="509dp"
+        android:layout_marginBottom="143dp"
+        android:text="Robert Downey Jr
+Chris Evans
+Mark Ruffalo
+Chris Hemsworth
+"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginBottom="106dp"
+        android:text="Descripcion"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="617dp"
+        android:layout_marginBottom="62dp"
+        android:text="Con la ayuda de los aliados restantes, los Vengadores se reúnen una vez más para revertir las acciones de Thanos"
+        android:textColor="#003048"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+</RelativeLayout>
